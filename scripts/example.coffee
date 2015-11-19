@@ -55,6 +55,21 @@ module.exports = (robot) ->
    robot.hear /yum/i, (res) ->
      res.send "http://apps.texastribune.org/fun/tribune-gifs/yum.gif"
 
+   robot.hear /attack/i, (res) ->
+     res.send "http://apps.texastribune.org/fun/tribune-gifs/attack.gif"
+
+   robot.hear /congrat/i, (res) ->
+     res.send "http://apps.texastribune.org/fun/tribune-gifs/applause.gif"
+
+   robot.hear /dance/i, (res) ->
+     res.send "http://apps.texastribune.org/fun/tribune-gifs/dance.gif"
+
+   robot.hear /creepy/i, (res) ->
+     res.send "http://apps.texastribune.org/fun/tribune-gifs/chris-baby.gif"
+
+   robot.hear /.*(not impressed).*/i, (res) ->
+     res.send "http://apps.texastribune.org/fun/tribune-gifs/sideeye.gif"
+
    robot.hear /.*(what would chris say).*/i, (msg) ->
      msg.send msg.random chris
 

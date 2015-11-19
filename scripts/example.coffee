@@ -16,13 +16,46 @@ module.exports = (robot) ->
    robot.hear /hmm/i, (res) ->
      res.send "http://apps.texastribune.org/fun/tribune-gifs/hmm.gif"
 
-   robot.respond /open the (.*) doors/i, (res) ->
-     doorType = res.match[1]
-     if doorType is "pod bay"
-       res.reply "I'm afraid I can't let you do that."
-     else
-       res.reply "Opening #{doorType} doors"
-  #
+   robot.hear /drink/i, (res) ->
+     res.send "http://apps.texastribune.org/fun/tribune-gifs/drink.gif"
+
+   robot.hear /flow/i, (res) ->
+     res.send "http://apps.texastribune.org/fun/tribune-gifs/flow.gif"
+
+   robot.hear /impressive/i, (res) ->
+     res.send "http://apps.texastribune.org/fun/tribune-gifs/impressive.gif"
+
+   robot.hear /money/i, (res) ->
+     res.send "http://apps.texastribune.org/fun/tribune-gifs/money.gif"
+
+   robot.hear /$/i, (res) ->
+     res.send "http://apps.texastribune.org/fun/tribune-gifs/money.gif"
+
+   robot.hear /point/i, (res) ->
+     res.send "http://apps.texastribune.org/fun/tribune-gifs/point.gif"
+
+   robot.hear /ride/i, (res) ->
+     res.send "http://apps.texastribune.org/fun/tribune-gifs/ride.gif"         
+
+   robot.hear /surprise/i, (res) ->
+     res.send "http://apps.texastribune.org/fun/tribune-gifs/surprise.gif"
+
+   robot.hear /taco/i, (res) ->
+     res.send "http://apps.texastribune.org/fun/tribune-gifs/taco.gif"
+
+   robot.hear /todd/i, (res) ->
+     res.send "http://apps.texastribune.org/fun/tribune-gifs/todd.gif"
+
+   robot.hear /wow/i, (res) ->
+     res.send "http://apps.texastribune.org/fun/tribune-gifs/wow.gif"
+
+   robot.hear /yo/i, (res) ->
+     res.send "http://apps.texastribune.org/fun/tribune-gifs/yo.gif"
+
+   robot.hear /yum/i, (res) ->
+     res.send "http://apps.texastribune.org/fun/tribune-gifs/yum.gif"
+
+
   # robot.hear /I like pie/i, (res) ->
   #   res.emote "makes a freshly baked pie"
   #

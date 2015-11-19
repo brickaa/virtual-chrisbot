@@ -55,5 +55,5 @@ module.exports = (robot) ->
    robot.hear /yum/i, (res) ->
      res.send "http://apps.texastribune.org/fun/tribune-gifs/yum.gif"
 
-   robot.hear /.*(chris).*/i, (msg) ->
+   robot.hear /.*(what would chris say).*/i, (msg) ->
      msg.send msg.random chris

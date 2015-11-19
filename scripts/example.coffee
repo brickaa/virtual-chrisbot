@@ -8,7 +8,9 @@ chris = [
   "We could definitely suck as much as we want.",
   "Did you actually deploy to production?",
   "Is your time synced up?",
-  "Pie."
+  "Pie.",
+  "There's pie in the kitchen.",
+  "Where's the icecream?"
 ]
 
 module.exports = (robot) ->

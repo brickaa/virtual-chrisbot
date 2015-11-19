@@ -10,8 +10,8 @@
 
 module.exports = (robot) ->
 
-   robot.hear /hmm/i, (res) ->
-     res.send msg.http('http://apps.texastribune.org/fun/tribune-gifs/hmm.gif')
+   robot.hear /badger/i, (res) ->
+     res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
   
    robot.respond /open the (.*) doors/i, (res) ->
      doorType = res.match[1]

@@ -57,3 +57,6 @@ module.exports = (robot) ->
 
    robot.hear /.*(what would chris say).*/i, (msg) ->
      msg.send msg.random chris
+
+   robot.hear /.*(wwcs).*/i, (msg) ->
+     msg.send msg.random chris

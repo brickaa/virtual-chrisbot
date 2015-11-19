@@ -26,10 +26,7 @@ module.exports = (robot) ->
      res.send "http://apps.texastribune.org/fun/tribune-gifs/impressive.gif"
 
    robot.hear /money/i, (res) ->
-     res.send "http://apps.texastribune.org/fun/tribune-gifs/money.gif"
-
-   robot.hear /'$'/i, (res) ->
-     res.send "http://apps.texastribune.org/fun/tribune-gifs/money.gif"
+     res.send "http://apps.texastribune.org/fun/tribune-gifs/money.jpg"
 
    robot.hear /point/i, (res) ->
      res.send "http://apps.texastribune.org/fun/tribune-gifs/point.gif"
@@ -49,7 +46,7 @@ module.exports = (robot) ->
    robot.hear /wow/i, (res) ->
      res.send "http://apps.texastribune.org/fun/tribune-gifs/wow.gif"
 
-   robot.hear /yo/i, (res) ->
+   robot.hear /guac/i, (res) ->
      res.send "http://apps.texastribune.org/fun/tribune-gifs/yo.gif"
 
    robot.hear /yum/i, (res) ->

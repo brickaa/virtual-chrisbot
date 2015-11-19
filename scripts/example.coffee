@@ -68,7 +68,7 @@ module.exports = (robot) ->
      res.send "http://apps.texastribune.org/fun/tribune-gifs/chris-baby.gif"
 
    robot.hear /.*(not impressed).*/i, (res) ->
-     res.send "http://apps.texastribune.org/fun/tribune-gifs/sideeye.gif"
+     res.send "http://apps.texastribune.org/fun/tribune-gifs/sideeye.jpg"
 
    robot.hear /.*(what would chris say).*/i, (msg) ->
      msg.send msg.random chris

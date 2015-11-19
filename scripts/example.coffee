@@ -28,7 +28,7 @@ module.exports = (robot) ->
    robot.hear /money/i, (res) ->
      res.send "http://apps.texastribune.org/fun/tribune-gifs/money.gif"
 
-   robot.hear /$/i, (res) ->
+   robot.hear /'$'/i, (res) ->
      res.send "http://apps.texastribune.org/fun/tribune-gifs/money.gif"
 
    robot.hear /point/i, (res) ->

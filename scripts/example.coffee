@@ -12,7 +12,10 @@ module.exports = (robot) ->
 
    robot.hear /badger/i, (res) ->
      res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
-  
+
+   robot.hear /hmm/i, (res) ->
+     res.send "HMM"
+
    robot.respond /open the (.*) doors/i, (res) ->
      doorType = res.match[1]
      if doorType is "pod bay"
